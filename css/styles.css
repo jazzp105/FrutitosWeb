@@ -1,0 +1,163 @@
+:root {
+    --dark: #3e0c58;
+    --dark-x: #3e0c58;
+}
+
+html, body {
+    height: 100%;
+    background-color:  url('../img/bg-textura.png');
+}
+
+.bgdark { background-color: #3e0c58}
+
+.navbar {
+    min-height: 5rem;
+    font-size: 20px;
+}
+
+#hero-container {
+    height: 600px;
+}
+
+#hero-background {
+    background-color: var(--dark);
+    position: absolute;
+    width: 0;
+    height: 600px;
+    transition: 1s ease-in-out;
+}
+
+#hero-img {
+    width: 100%;
+    max-width: 450px;
+    opacity: 0;
+    z-index: 1000;
+    transition: 2s ease-in-out;
+}
+
+.imagenS{
+    border-radius: 20px;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    align-items: center;
+}
+
+
+
+.spin {
+    width: 100%;
+    max-width: 450px;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#hero-text {
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+.marketing{
+    padding-top: 100px;
+    
+}
+.curiosidades h3{
+    text-align: center;
+   
+}
+.curiosidades .tituloC{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.curiosidades{
+    padding-bottom: 50px;
+}
+
+.btn {
+    padding: .75rem 2rem;
+}
+footer .redesSociales{
+    background: #3e0c58;
+    padding: 60px 0;
+	height: 200px;
+}
+footer .contenedor{
+	
+    display: flex;
+    justify-content: center;
+	
+}
+footer .redesSociales a{
+    color: #fff;
+    text-align: center;
+    width: 70px;
+	height: 70px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+	border-radius: 30%;
+}
+
+
+footer .redesSociales .twitter:hover{
+    background: #1da1f2;
+}
+footer .redesSociales .facebook:hover{
+    background: #3b5998;
+}
+footer .redesSociales .youtube:hover{
+    background: #ff0000;
+}
+footer .redesSociales .instagram:hover{
+    background: #f77737;
+}
+footer .redesSociales .rappi:hover{
+    background: #ececec;
+}
+footer .redesSociales .wsp:hover{
+    background: #075e54;
+}
+
+
+@media (max-width: 1024px) {
+   .display-1 {
+       font-size: 3rem;
+   }
+}
+
+@media (max-width: 768px) {
+    #hero-content {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    #hero-container {
+        height: unset;
+    }
+    #hero-background {
+        height: 100%;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .btn {
+        width: 100%;
+    }
+    .spin {
+        max-width: 260px;
+    }
+ }
